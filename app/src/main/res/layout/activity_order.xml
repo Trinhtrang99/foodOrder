@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Order"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/fooderOrder">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="Food order"
+                android:textSize="@dimen/_15sdp">
+
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            >
+
+            <TextView
+                android:id="@+id/tvWellCome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wellcome KhoaHA"
+                android:textSize="@dimen/_15sdp"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:layout_below="@+id/tvWellCome"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp" />
+
+
+            <RelativeLayout
+                android:id="@+id/lotien"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/rcView">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Total Price: "
+                    android:textSize="@dimen/_14sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvtong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:textSize="@dimen/_15sdp" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lotien"
+                android:background="#CF326A"
+                android:text="Order"
+                android:textSize="@dimen/_15sdp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

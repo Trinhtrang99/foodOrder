@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment">
+
+    <FrameLayout
+        android:layout_above="@+id/line"
+        android:id="@+id/flagment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_home_24" />
+
+
+        <Button
+            android:id="@+id/imgGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/ic_baseline_shopping_cart_24">
+
+            /></Button>
+
+        <TextView
+            android:id="@+id/tvSoLuong1"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-60dp"
+            android:background="@drawable/bo_tron"
+
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
